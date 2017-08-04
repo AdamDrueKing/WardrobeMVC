@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.SecondLayerTopOccasion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SecondLayerTopOccasion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopOccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopOccasionName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SecondLayerTopOccasionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

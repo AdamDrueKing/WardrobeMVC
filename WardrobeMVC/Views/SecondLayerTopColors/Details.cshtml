@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.SecondLayerTopColor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SecondLayerTopColor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopColorName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SecondLayerTopColorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

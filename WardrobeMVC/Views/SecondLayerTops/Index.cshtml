@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WardrobeMVC.Models.SecondLayerTop>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopColor.SecondLayerTopColorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopOccasion.SecondLayerTopOccasionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopSeason.SecondLayerTopSeasonName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopType.SecondLayerTopName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopColor.SecondLayerTopColorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopOccasion.SecondLayerTopOccasionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopSeason.SecondLayerTopSeasonName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopType.SecondLayerTopName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SecondLayerTopID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SecondLayerTopID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SecondLayerTopID })
+        </td>
+    </tr>
+}
+
+</table>

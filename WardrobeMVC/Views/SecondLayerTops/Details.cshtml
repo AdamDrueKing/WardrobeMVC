@@ -1,0 +1,66 @@
+﻿@model WardrobeMVC.Models.SecondLayerTop
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SecondLayerTop</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopColor.SecondLayerTopColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopColor.SecondLayerTopColorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopOccasion.SecondLayerTopOccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopOccasion.SecondLayerTopOccasionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopSeason.SecondLayerTopSeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopSeason.SecondLayerTopSeasonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopType.SecondLayerTopName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopType.SecondLayerTopName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SecondLayerTopID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

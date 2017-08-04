@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.SecondLayerTopSeason
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SecondLayerTopSeason</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondLayerTopSeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondLayerTopSeasonName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SecondLayerTopSeasonID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

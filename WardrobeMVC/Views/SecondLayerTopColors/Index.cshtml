@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WardrobeMVC.Models.SecondLayerTopColor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondLayerTopColorName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondLayerTopColorName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SecondLayerTopColorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SecondLayerTopColorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SecondLayerTopColorID })
+        </td>
+    </tr>
+}
+
+</table>

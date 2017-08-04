@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WardrobeMVC.Models.Accessory5Colors>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Accessory5ColorName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accessory5ColorName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Accessory5ColorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Accessory5ColorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Accessory5ColorID })
+        </td>
+    </tr>
+}
+
+</table>

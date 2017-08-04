@@ -1,0 +1,72 @@
+﻿@model WardrobeMVC.Models.Accessories4
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Accessories4</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Colors.Accessory4ColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Colors.Accessory4ColorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Occassions.Accessory4OccassionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Occassions.Accessory4OccassionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Seasons.Accessory4SeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Seasons.Accessory4SeasonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory4Types.Accessory4TypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory4Types.Accessory4TypeName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.Accessory5Colors
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessory5Colors</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5ColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5ColorName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Accessory5ColorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -80,6 +88,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -148,9 +158,228 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Accessories2Controller.cs" />
+    <Compile Include="Controllers\Accessories3Controller.cs" />
+    <Compile Include="Controllers\Accessories4Controller.cs" />
+    <Compile Include="Controllers\Accessories5Controller.cs" />
+    <Compile Include="Controllers\AccessoriesController.cs" />
+    <Compile Include="Controllers\Accessory2ColorsController.cs" />
+    <Compile Include="Controllers\Accessory2OccassionsController.cs" />
+    <Compile Include="Controllers\Accessory2SeasonsController.cs" />
+    <Compile Include="Controllers\Accessory2TypesController.cs" />
+    <Compile Include="Controllers\Accessory3ColorsController.cs" />
+    <Compile Include="Controllers\Accessory3OccassionsController.cs" />
+    <Compile Include="Controllers\Accessory3SeasonsController.cs" />
+    <Compile Include="Controllers\Accessory3TypesController.cs" />
+    <Compile Include="Controllers\Accessory4ColorsController.cs" />
+    <Compile Include="Controllers\Accessory4OccassionsController.cs" />
+    <Compile Include="Controllers\Accessory4SeasonsController.cs" />
+    <Compile Include="Controllers\Accessory4TypesController.cs" />
+    <Compile Include="Controllers\Accessory5ColorsController.cs" />
+    <Compile Include="Controllers\Accessory5OccassionsController.cs" />
+    <Compile Include="Controllers\Accessory5SeasonsController.cs" />
+    <Compile Include="Controllers\Accessory5TypesController.cs" />
+    <Compile Include="Controllers\AccessoryColorsController.cs" />
+    <Compile Include="Controllers\AccessoryOccasionsController.cs" />
+    <Compile Include="Controllers\AccessorySeasonsController.cs" />
+    <Compile Include="Controllers\AccessoryTypesController.cs" />
+    <Compile Include="Controllers\BottomsColorsController.cs" />
+    <Compile Include="Controllers\BottomsController.cs" />
+    <Compile Include="Controllers\BottomsOccasionsController.cs" />
+    <Compile Include="Controllers\BottomsSeasonsController.cs" />
+    <Compile Include="Controllers\BottomsTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OuterwearColorsController.cs" />
+    <Compile Include="Controllers\OuterwearOccassionsController.cs" />
+    <Compile Include="Controllers\OuterwearsController.cs" />
+    <Compile Include="Controllers\OuterwearSeasonsController.cs" />
+    <Compile Include="Controllers\OuterwearTypesController.cs" />
+    <Compile Include="Controllers\OutfitIDsController.cs" />
+    <Compile Include="Controllers\SecondLayerTopColorsController.cs" />
+    <Compile Include="Controllers\SecondLayerTopOccasionsController.cs" />
+    <Compile Include="Controllers\SecondLayerTopsController.cs" />
+    <Compile Include="Controllers\SecondLayerTopSeasonsController.cs" />
+    <Compile Include="Controllers\SecondLayerTopTypesController.cs" />
+    <Compile Include="Controllers\ShoeColorsController.cs" />
+    <Compile Include="Controllers\ShoeOccasionsController.cs" />
+    <Compile Include="Controllers\ShoesController.cs" />
+    <Compile Include="Controllers\ShoeSeasonsController.cs" />
+    <Compile Include="Controllers\ShoeTypesController.cs" />
+    <Compile Include="Controllers\TopColorsController.cs" />
+    <Compile Include="Controllers\TopOccassionsController.cs" />
+    <Compile Include="Controllers\TopsController.cs" />
+    <Compile Include="Controllers\TopSeasonsController.cs" />
+    <Compile Include="Controllers\TopTypesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessories2.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessories3.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessories4.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessories5.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory2Colors.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory2Occassions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory2Seasons.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory2Types.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory3Colors.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory3Occassions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory3Seasons.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory3Types.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory4Colors.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory4Occassions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory4Seasons.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory4Types.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory5Colors.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory5Occassions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory5Seasons.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Accessory5Types.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccessoryColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccessoryOccasion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccessorySeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccessoryType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bottom.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BottomsColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BottomsOccasion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BottomsSeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BottomsType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Outerwear.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OuterwearColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OuterwearOccassion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OuterwearSeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OuterwearType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OutfitID.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SecondLayerTop.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SecondLayerTopColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SecondLayerTopOccasion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SecondLayerTopSeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SecondLayerTopType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sho.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoeColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoeOccasion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoeSeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShoeType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Top.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TopColor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TopOccassion.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TopSeason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TopType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,10 +390,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -192,10 +438,264 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Accessories\Create.cshtml" />
+    <Content Include="Views\Accessories\Delete.cshtml" />
+    <Content Include="Views\Accessories\Details.cshtml" />
+    <Content Include="Views\Accessories\Edit.cshtml" />
+    <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\Accessories2\Create.cshtml" />
+    <Content Include="Views\Accessories2\Delete.cshtml" />
+    <Content Include="Views\Accessories2\Details.cshtml" />
+    <Content Include="Views\Accessories2\Edit.cshtml" />
+    <Content Include="Views\Accessories2\Index.cshtml" />
+    <Content Include="Views\Accessories3\Create.cshtml" />
+    <Content Include="Views\Accessories3\Delete.cshtml" />
+    <Content Include="Views\Accessories3\Details.cshtml" />
+    <Content Include="Views\Accessories3\Edit.cshtml" />
+    <Content Include="Views\Accessories3\Index.cshtml" />
+    <Content Include="Views\Accessories4\Create.cshtml" />
+    <Content Include="Views\Accessories4\Delete.cshtml" />
+    <Content Include="Views\Accessories4\Details.cshtml" />
+    <Content Include="Views\Accessories4\Edit.cshtml" />
+    <Content Include="Views\Accessories4\Index.cshtml" />
+    <Content Include="Views\Accessories5\Create.cshtml" />
+    <Content Include="Views\Accessories5\Delete.cshtml" />
+    <Content Include="Views\Accessories5\Details.cshtml" />
+    <Content Include="Views\Accessories5\Edit.cshtml" />
+    <Content Include="Views\Accessories5\Index.cshtml" />
+    <Content Include="Views\Accessory2Colors\Create.cshtml" />
+    <Content Include="Views\Accessory2Colors\Delete.cshtml" />
+    <Content Include="Views\Accessory2Colors\Details.cshtml" />
+    <Content Include="Views\Accessory2Colors\Edit.cshtml" />
+    <Content Include="Views\Accessory2Colors\Index.cshtml" />
+    <Content Include="Views\Accessory2Occassions\Create.cshtml" />
+    <Content Include="Views\Accessory2Occassions\Delete.cshtml" />
+    <Content Include="Views\Accessory2Occassions\Details.cshtml" />
+    <Content Include="Views\Accessory2Occassions\Edit.cshtml" />
+    <Content Include="Views\Accessory2Occassions\Index.cshtml" />
+    <Content Include="Views\Accessory2Seasons\Create.cshtml" />
+    <Content Include="Views\Accessory2Seasons\Delete.cshtml" />
+    <Content Include="Views\Accessory2Seasons\Details.cshtml" />
+    <Content Include="Views\Accessory2Seasons\Edit.cshtml" />
+    <Content Include="Views\Accessory2Seasons\Index.cshtml" />
+    <Content Include="Views\Accessory2Types\Create.cshtml" />
+    <Content Include="Views\Accessory2Types\Delete.cshtml" />
+    <Content Include="Views\Accessory2Types\Details.cshtml" />
+    <Content Include="Views\Accessory2Types\Edit.cshtml" />
+    <Content Include="Views\Accessory2Types\Index.cshtml" />
+    <Content Include="Views\Accessory3Colors\Create.cshtml" />
+    <Content Include="Views\Accessory3Colors\Delete.cshtml" />
+    <Content Include="Views\Accessory3Colors\Details.cshtml" />
+    <Content Include="Views\Accessory3Colors\Edit.cshtml" />
+    <Content Include="Views\Accessory3Colors\Index.cshtml" />
+    <Content Include="Views\Accessory3Occassions\Create.cshtml" />
+    <Content Include="Views\Accessory3Occassions\Delete.cshtml" />
+    <Content Include="Views\Accessory3Occassions\Details.cshtml" />
+    <Content Include="Views\Accessory3Occassions\Edit.cshtml" />
+    <Content Include="Views\Accessory3Occassions\Index.cshtml" />
+    <Content Include="Views\Accessory3Seasons\Create.cshtml" />
+    <Content Include="Views\Accessory3Seasons\Delete.cshtml" />
+    <Content Include="Views\Accessory3Seasons\Details.cshtml" />
+    <Content Include="Views\Accessory3Seasons\Edit.cshtml" />
+    <Content Include="Views\Accessory3Seasons\Index.cshtml" />
+    <Content Include="Views\Accessory3Types\Create.cshtml" />
+    <Content Include="Views\Accessory3Types\Delete.cshtml" />
+    <Content Include="Views\Accessory3Types\Details.cshtml" />
+    <Content Include="Views\Accessory3Types\Edit.cshtml" />
+    <Content Include="Views\Accessory3Types\Index.cshtml" />
+    <Content Include="Views\Accessory4Colors\Create.cshtml" />
+    <Content Include="Views\Accessory4Colors\Delete.cshtml" />
+    <Content Include="Views\Accessory4Colors\Details.cshtml" />
+    <Content Include="Views\Accessory4Colors\Edit.cshtml" />
+    <Content Include="Views\Accessory4Colors\Index.cshtml" />
+    <Content Include="Views\Accessory4Occassions\Create.cshtml" />
+    <Content Include="Views\Accessory4Occassions\Delete.cshtml" />
+    <Content Include="Views\Accessory4Occassions\Details.cshtml" />
+    <Content Include="Views\Accessory4Occassions\Edit.cshtml" />
+    <Content Include="Views\Accessory4Occassions\Index.cshtml" />
+    <Content Include="Views\Accessory4Seasons\Create.cshtml" />
+    <Content Include="Views\Accessory4Seasons\Delete.cshtml" />
+    <Content Include="Views\Accessory4Seasons\Details.cshtml" />
+    <Content Include="Views\Accessory4Seasons\Edit.cshtml" />
+    <Content Include="Views\Accessory4Seasons\Index.cshtml" />
+    <Content Include="Views\Accessory4Types\Create.cshtml" />
+    <Content Include="Views\Accessory4Types\Delete.cshtml" />
+    <Content Include="Views\Accessory4Types\Details.cshtml" />
+    <Content Include="Views\Accessory4Types\Edit.cshtml" />
+    <Content Include="Views\Accessory4Types\Index.cshtml" />
+    <Content Include="Views\Accessory5Colors\Create.cshtml" />
+    <Content Include="Views\Accessory5Colors\Delete.cshtml" />
+    <Content Include="Views\Accessory5Colors\Details.cshtml" />
+    <Content Include="Views\Accessory5Colors\Edit.cshtml" />
+    <Content Include="Views\Accessory5Colors\Index.cshtml" />
+    <Content Include="Views\Accessory5Occassions\Create.cshtml" />
+    <Content Include="Views\Accessory5Occassions\Delete.cshtml" />
+    <Content Include="Views\Accessory5Occassions\Details.cshtml" />
+    <Content Include="Views\Accessory5Occassions\Edit.cshtml" />
+    <Content Include="Views\Accessory5Occassions\Index.cshtml" />
+    <Content Include="Views\Accessory5Seasons\Create.cshtml" />
+    <Content Include="Views\Accessory5Seasons\Delete.cshtml" />
+    <Content Include="Views\Accessory5Seasons\Details.cshtml" />
+    <Content Include="Views\Accessory5Seasons\Edit.cshtml" />
+    <Content Include="Views\Accessory5Seasons\Index.cshtml" />
+    <Content Include="Views\Accessory5Types\Create.cshtml" />
+    <Content Include="Views\Accessory5Types\Delete.cshtml" />
+    <Content Include="Views\Accessory5Types\Details.cshtml" />
+    <Content Include="Views\Accessory5Types\Edit.cshtml" />
+    <Content Include="Views\Accessory5Types\Index.cshtml" />
+    <Content Include="Views\AccessoryColors\Create.cshtml" />
+    <Content Include="Views\AccessoryColors\Delete.cshtml" />
+    <Content Include="Views\AccessoryColors\Details.cshtml" />
+    <Content Include="Views\AccessoryColors\Edit.cshtml" />
+    <Content Include="Views\AccessoryColors\Index.cshtml" />
+    <Content Include="Views\AccessoryOccasions\Create.cshtml" />
+    <Content Include="Views\AccessoryOccasions\Delete.cshtml" />
+    <Content Include="Views\AccessoryOccasions\Details.cshtml" />
+    <Content Include="Views\AccessoryOccasions\Edit.cshtml" />
+    <Content Include="Views\AccessoryOccasions\Index.cshtml" />
+    <Content Include="Views\AccessorySeasons\Create.cshtml" />
+    <Content Include="Views\AccessorySeasons\Delete.cshtml" />
+    <Content Include="Views\AccessorySeasons\Details.cshtml" />
+    <Content Include="Views\AccessorySeasons\Edit.cshtml" />
+    <Content Include="Views\AccessorySeasons\Index.cshtml" />
+    <Content Include="Views\AccessoryTypes\Create.cshtml" />
+    <Content Include="Views\AccessoryTypes\Delete.cshtml" />
+    <Content Include="Views\AccessoryTypes\Details.cshtml" />
+    <Content Include="Views\AccessoryTypes\Edit.cshtml" />
+    <Content Include="Views\AccessoryTypes\Index.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\BottomsColors\Create.cshtml" />
+    <Content Include="Views\BottomsColors\Delete.cshtml" />
+    <Content Include="Views\BottomsColors\Details.cshtml" />
+    <Content Include="Views\BottomsColors\Edit.cshtml" />
+    <Content Include="Views\BottomsColors\Index.cshtml" />
+    <Content Include="Views\BottomsOccasions\Create.cshtml" />
+    <Content Include="Views\BottomsOccasions\Delete.cshtml" />
+    <Content Include="Views\BottomsOccasions\Details.cshtml" />
+    <Content Include="Views\BottomsOccasions\Edit.cshtml" />
+    <Content Include="Views\BottomsOccasions\Index.cshtml" />
+    <Content Include="Views\BottomsSeasons\Create.cshtml" />
+    <Content Include="Views\BottomsSeasons\Delete.cshtml" />
+    <Content Include="Views\BottomsSeasons\Details.cshtml" />
+    <Content Include="Views\BottomsSeasons\Edit.cshtml" />
+    <Content Include="Views\BottomsSeasons\Index.cshtml" />
+    <Content Include="Views\BottomsTypes\Create.cshtml" />
+    <Content Include="Views\BottomsTypes\Delete.cshtml" />
+    <Content Include="Views\BottomsTypes\Details.cshtml" />
+    <Content Include="Views\BottomsTypes\Edit.cshtml" />
+    <Content Include="Views\BottomsTypes\Index.cshtml" />
+    <Content Include="Views\Outerwears\Create.cshtml" />
+    <Content Include="Views\Outerwears\Delete.cshtml" />
+    <Content Include="Views\Outerwears\Details.cshtml" />
+    <Content Include="Views\Outerwears\Edit.cshtml" />
+    <Content Include="Views\Outerwears\Index.cshtml" />
+    <Content Include="Views\OuterwearColors\Create.cshtml" />
+    <Content Include="Views\OuterwearColors\Delete.cshtml" />
+    <Content Include="Views\OuterwearColors\Details.cshtml" />
+    <Content Include="Views\OuterwearColors\Edit.cshtml" />
+    <Content Include="Views\OuterwearColors\Index.cshtml" />
+    <Content Include="Views\OuterwearOccassions\Create.cshtml" />
+    <Content Include="Views\OuterwearOccassions\Delete.cshtml" />
+    <Content Include="Views\OuterwearOccassions\Details.cshtml" />
+    <Content Include="Views\OuterwearOccassions\Edit.cshtml" />
+    <Content Include="Views\OuterwearOccassions\Index.cshtml" />
+    <Content Include="Views\OuterwearSeasons\Create.cshtml" />
+    <Content Include="Views\OuterwearSeasons\Delete.cshtml" />
+    <Content Include="Views\OuterwearSeasons\Details.cshtml" />
+    <Content Include="Views\OuterwearSeasons\Edit.cshtml" />
+    <Content Include="Views\OuterwearSeasons\Index.cshtml" />
+    <Content Include="Views\OuterwearTypes\Create.cshtml" />
+    <Content Include="Views\OuterwearTypes\Delete.cshtml" />
+    <Content Include="Views\OuterwearTypes\Details.cshtml" />
+    <Content Include="Views\OuterwearTypes\Edit.cshtml" />
+    <Content Include="Views\OuterwearTypes\Index.cshtml" />
+    <Content Include="Views\OutfitIDs\Create.cshtml" />
+    <Content Include="Views\OutfitIDs\Delete.cshtml" />
+    <Content Include="Views\OutfitIDs\Details.cshtml" />
+    <Content Include="Views\OutfitIDs\Edit.cshtml" />
+    <Content Include="Views\OutfitIDs\Index.cshtml" />
+    <Content Include="Views\SecondLayerTops\Create.cshtml" />
+    <Content Include="Views\SecondLayerTops\Delete.cshtml" />
+    <Content Include="Views\SecondLayerTops\Details.cshtml" />
+    <Content Include="Views\SecondLayerTops\Edit.cshtml" />
+    <Content Include="Views\SecondLayerTops\Index.cshtml" />
+    <Content Include="Views\SecondLayerTopColors\Create.cshtml" />
+    <Content Include="Views\SecondLayerTopColors\Delete.cshtml" />
+    <Content Include="Views\SecondLayerTopColors\Details.cshtml" />
+    <Content Include="Views\SecondLayerTopColors\Edit.cshtml" />
+    <Content Include="Views\SecondLayerTopColors\Index.cshtml" />
+    <Content Include="Views\SecondLayerTopOccasions\Create.cshtml" />
+    <Content Include="Views\SecondLayerTopOccasions\Delete.cshtml" />
+    <Content Include="Views\SecondLayerTopOccasions\Details.cshtml" />
+    <Content Include="Views\SecondLayerTopOccasions\Edit.cshtml" />
+    <Content Include="Views\SecondLayerTopOccasions\Index.cshtml" />
+    <Content Include="Views\SecondLayerTopSeasons\Create.cshtml" />
+    <Content Include="Views\SecondLayerTopSeasons\Delete.cshtml" />
+    <Content Include="Views\SecondLayerTopSeasons\Details.cshtml" />
+    <Content Include="Views\SecondLayerTopSeasons\Edit.cshtml" />
+    <Content Include="Views\SecondLayerTopSeasons\Index.cshtml" />
+    <Content Include="Views\SecondLayerTopTypes\Create.cshtml" />
+    <Content Include="Views\SecondLayerTopTypes\Delete.cshtml" />
+    <Content Include="Views\SecondLayerTopTypes\Details.cshtml" />
+    <Content Include="Views\SecondLayerTopTypes\Edit.cshtml" />
+    <Content Include="Views\SecondLayerTopTypes\Index.cshtml" />
+    <Content Include="Views\Shoes\Create.cshtml" />
+    <Content Include="Views\Shoes\Delete.cshtml" />
+    <Content Include="Views\Shoes\Details.cshtml" />
+    <Content Include="Views\Shoes\Edit.cshtml" />
+    <Content Include="Views\Shoes\Index.cshtml" />
+    <Content Include="Views\ShoeColors\Create.cshtml" />
+    <Content Include="Views\ShoeColors\Delete.cshtml" />
+    <Content Include="Views\ShoeColors\Details.cshtml" />
+    <Content Include="Views\ShoeColors\Edit.cshtml" />
+    <Content Include="Views\ShoeColors\Index.cshtml" />
+    <Content Include="Views\ShoeOccasions\Create.cshtml" />
+    <Content Include="Views\ShoeOccasions\Delete.cshtml" />
+    <Content Include="Views\ShoeOccasions\Details.cshtml" />
+    <Content Include="Views\ShoeOccasions\Edit.cshtml" />
+    <Content Include="Views\ShoeOccasions\Index.cshtml" />
+    <Content Include="Views\ShoeSeasons\Create.cshtml" />
+    <Content Include="Views\ShoeSeasons\Delete.cshtml" />
+    <Content Include="Views\ShoeSeasons\Details.cshtml" />
+    <Content Include="Views\ShoeSeasons\Edit.cshtml" />
+    <Content Include="Views\ShoeSeasons\Index.cshtml" />
+    <Content Include="Views\ShoeTypes\Create.cshtml" />
+    <Content Include="Views\ShoeTypes\Delete.cshtml" />
+    <Content Include="Views\ShoeTypes\Details.cshtml" />
+    <Content Include="Views\ShoeTypes\Edit.cshtml" />
+    <Content Include="Views\ShoeTypes\Index.cshtml" />
+    <Content Include="Views\Tops\Create.cshtml" />
+    <Content Include="Views\Tops\Delete.cshtml" />
+    <Content Include="Views\Tops\Details.cshtml" />
+    <Content Include="Views\Tops\Edit.cshtml" />
+    <Content Include="Views\Tops\Index.cshtml" />
+    <Content Include="Views\TopColors\Create.cshtml" />
+    <Content Include="Views\TopColors\Delete.cshtml" />
+    <Content Include="Views\TopColors\Details.cshtml" />
+    <Content Include="Views\TopColors\Edit.cshtml" />
+    <Content Include="Views\TopColors\Index.cshtml" />
+    <Content Include="Views\TopOccassions\Create.cshtml" />
+    <Content Include="Views\TopOccassions\Delete.cshtml" />
+    <Content Include="Views\TopOccassions\Details.cshtml" />
+    <Content Include="Views\TopOccassions\Edit.cshtml" />
+    <Content Include="Views\TopOccassions\Index.cshtml" />
+    <Content Include="Views\TopSeasons\Create.cshtml" />
+    <Content Include="Views\TopSeasons\Delete.cshtml" />
+    <Content Include="Views\TopSeasons\Details.cshtml" />
+    <Content Include="Views\TopSeasons\Edit.cshtml" />
+    <Content Include="Views\TopSeasons\Index.cshtml" />
+    <Content Include="Views\TopTypes\Create.cshtml" />
+    <Content Include="Views\TopTypes\Delete.cshtml" />
+    <Content Include="Views\TopTypes\Details.cshtml" />
+    <Content Include="Views\TopTypes\Edit.cshtml" />
+    <Content Include="Views\TopTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -204,6 +704,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

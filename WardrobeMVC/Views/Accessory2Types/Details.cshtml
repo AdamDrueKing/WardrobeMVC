@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.Accessory2Types
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessory2Types</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory2TypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory2TypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Accessory2TypeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

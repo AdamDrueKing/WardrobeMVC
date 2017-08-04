@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.BottomsColor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BottomsColor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsColorName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomsColorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

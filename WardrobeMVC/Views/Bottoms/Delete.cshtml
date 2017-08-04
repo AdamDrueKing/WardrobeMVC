@@ -1,0 +1,72 @@
+﻿@model WardrobeMVC.Models.Bottom
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bottom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsColor.BottomsColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsColor.BottomsColorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsOccasion.BottomsOccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsOccasion.BottomsOccasionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsSeason.BottomsSeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsSeason.BottomsSeasonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomsType.BottomsTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomsType.BottomsTypeName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

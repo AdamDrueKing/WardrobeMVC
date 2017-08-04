@@ -1,0 +1,66 @@
+﻿@model WardrobeMVC.Models.Accessories5
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessories5</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Colors.Accessory5ColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Colors.Accessory5ColorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Occassions.Accessory5OccassionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Occassions.Accessory5OccassionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Seasons.Accessory5SeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Seasons.Accessory5SeasonName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory5Types.Accessory5TypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory5Types.Accessory5TypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Accessory5ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

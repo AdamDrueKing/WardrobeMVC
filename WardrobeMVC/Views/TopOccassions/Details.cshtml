@@ -1,0 +1,26 @@
+﻿@model WardrobeMVC.Models.TopOccassion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TopOccassion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TopOccassionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopOccassionName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopOccassionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

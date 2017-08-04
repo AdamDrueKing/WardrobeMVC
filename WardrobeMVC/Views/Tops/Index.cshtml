@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WardrobeMVC.Models.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TopName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopColor.TopColorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopOccassion.TopOccassionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopSeason.TopSeasonName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TopType.TopTypeName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopColor.TopColorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopOccassion.TopOccassionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopSeason.TopSeasonName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TopType.TopTypeName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
+        </td>
+    </tr>
+}
+
+</table>
