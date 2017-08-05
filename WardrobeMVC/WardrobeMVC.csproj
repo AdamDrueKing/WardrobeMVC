@@ -386,6 +386,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\hanger-line_318-42286.jpg" />
+    <Content Include="Content\Images\hangerpic.png" />
+    <Content Include="Content\Images\wood.jpeg" />
+    <Content Include="Content\Images\wood2.jpeg" />
+    <Content Include="Content\Images\wood3.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

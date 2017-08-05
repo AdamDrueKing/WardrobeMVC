@@ -6,51 +6,196 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <!--Carousel Feature Tops-->
+    <title>Tops</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Carousel Feature Bottoms-->
+    <title>Bottoms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Carousel Feature Shoes-->
+    <title>Shoes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Carousel Feature Accessories-->
+    <title>Accesories</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Font Style Sheet-->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amatica+SC|Anton|Archivo|Coda+Caption:800|Gruppo|Julius+Sans+One|Montserrat|Open+Sans+Condensed:300|Oswald|Pavanam|Raleway|Roboto+Condensed|Rubik+Mono+One|Saira|Saira+Condensed|Saira+Extra+Condensed|Sarpanch|Six+Caps|Stint+Ultra+Expanded|Wire+One" rel="stylesheet">
+
+
 </head>
 <body>
-    <nav class="navbar navbar-default">
+<!--Navbar-->
+    <nav class="navbar navbar-default" style="background-image: url('../../Content/Images/wood3.jpg');">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="color:white;">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#" style="font-family: 'Julius Sans One', sans-serif;color:white;">Virtual Closet</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:white;font-family: 'Montserrat', sans-serif;">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="http://localhost:64233/">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="http://localhost:64233/OutfitIDs/Index">Outfits</a></li>
-                    <li><a href="http://localhost:64233/Tops/Index">Tops</a></li>
-                    <li><a href="http://localhost:64233/Bottoms/Index">Bottoms</a></li>
-                    <li><a href="http://localhost:64233/Shoes/Index">Shoes</a></li>
-                    <li><a href="http://localhost:64233/Accessories/Index">Accessories</a></li>
-                    <li><a href="http://localhost:64233/SecondLayerTops/Index">Layering Pieces</a></li>
-                    <li><a href="http://localhost:64233/Outerwears/Index">Outerwear</a></li>
-                    <li><a href="#">More Accessories</a></li>
                     <li><a href="http://localhost:64233/Home/Contact">Contact Us</a></li>
                     <li><a href="http://localhost:64233/Home/About">About Us</a></li>
                     
-
-
-                    @*<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+<!--Outfits Dropdown-->
+                    <li class="dropdown">
+                        <a href="http://localhost:64233/OutfitIDs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outfits<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="http://localhost:64233/OutfitIDs/Index">View</a></li>
+                            <li><a href="http://localhost:64233/OutfitIDs/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/OutfitIDs/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/OutfitIDs/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/OutfitIDs/Delete">Delete</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
                         </ul>
-                    </li>*@
+                    </li>
+
+<!--Tops Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tops<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Tops/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Tops/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Tops/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Tops/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Tops/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--Bottoms Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bottoms<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Bottoms/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Bottoms/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Bottoms/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Bottoms/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Bottoms/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--Shoes Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shoes<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Shoes/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Shoes/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Shoes/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Shoes/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Shoes/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--Accessories Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Accessories/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Accessories/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Accessories/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Accessories/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Accessories/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--Layering Pieces Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layering Pieces<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/SecondLayerTops/Index">View</a></li>
+                            <li><a href="http://localhost:64233/SecondLayerTops/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/SecondLayerTops/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/SecondLayerTops/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/SecondLayerTops/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--Outerwear Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outerwear<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Outerwears/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Outerwears/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Outerwears/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Outerwears/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Outerwears/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
+
+<!--More Accessories Dropdown-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Accessories<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:64233/Accessories2/Index">View</a></li>
+                            <li><a href="http://localhost:64233/Accessories2/Create">Create</a></li>
+                            <li><a href="http://localhost:64233/Accessories2/Details">Details</a></li>
+                            <li><a href="http://localhost:64233/Accessories2/Edit">Edit</a></li>
+                            <li><a href="http://localhost:64233/Accessories2/Delete">Delete</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://localhost:64233/">Home</a></li>
+                            @*<li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>*@
+                        </ul>
+                    </li>
                 </ul>
+
+
                 @*<form class="navbar-form navbar-left">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
@@ -74,43 +219,10 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-
-
-
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Virtual Closet", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Tops", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Bottoms", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Shoes", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Accessories", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Layering Pieces", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Outerwear", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-
-
-                </ul>
-            </div>
-        </div>
-    </div>*@
     <div class="container body-content" style="text-align:center;">
         @RenderBody()
         <hr />
-        <footer>
+        <footer style="background-image: url('../../Content/Images/wood3.jpg'); color:white;">
             <p>&copy; @DateTime.Now.Year - My Virtual Closet MVP Project</p>
             <p>By Adam King</p>
         </footer>
