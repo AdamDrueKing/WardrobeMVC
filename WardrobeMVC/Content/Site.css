@@ -31,3 +31,27 @@ textarea {
 .footer {
     color:white;
 }
+
+h2 {
+    font-family: 'Coda Caption', sans-serif;
+}
+
+h3 {
+font-family: 'Saira Condensed', sans-serif;
+font-size:20px;
+}
+
+h4 {
+font-family: 'Saira Condensed', sans-serif;
+font-size:20px;
+}
+
+h5 {
+font-family: 'Saira Condensed', sans-serif;
+font-size:20px;
+}
+
+h6 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:20px;
+}
