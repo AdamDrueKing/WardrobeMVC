@@ -4,7 +4,7 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h2 style="font-family: 'Coda Caption', sans-serif;">Create An Item</h2>
 
 
 @using (Html.BeginForm()) 
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>SecondLayerTop</h4>
+        <h4 style="font-family: 'Saira Condensed', sans-serif;">SecondLayerTop</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SecondLayerTopTypeID, "SecondLayerTopTypeID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.SecondLayerTopTypeID, "Type", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SecondLayerTopTypeID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SecondLayerTopTypeID, "", new { @class = "text-danger" })
@@ -40,7 +40,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SecondLayerTopColorID, "SecondLayerTopColorID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.SecondLayerTopColorID, "Color", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SecondLayerTopColorID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SecondLayerTopColorID, "", new { @class = "text-danger" })
@@ -48,7 +48,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SecondLayerTopSeasonID, "SecondLayerTopSeasonID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.SecondLayerTopSeasonID, "Season", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SecondLayerTopSeasonID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SecondLayerTopSeasonID, "", new { @class = "text-danger" })
@@ -56,7 +56,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SecondLayerTopOccassionID, "SecondLayerTopOccassionID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.SecondLayerTopOccassionID, "Occassion", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SecondLayerTopOccassionID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SecondLayerTopOccassionID, "", new { @class = "text-danger" })

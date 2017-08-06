@@ -4,7 +4,7 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2 style="font-family: 'Coda Caption', sans-serif;">Edit</h2>
 
 
 @using (Html.BeginForm())
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>OutfitID</h4>
+        <h4  >Outfit</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -25,87 +25,87 @@
 
         @Html.HiddenFor(model => model.OutfitName)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.TopID, "TopID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.TopID, "Top", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("TopID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.TopID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.SecondLayerTopID, "SecondLayerTopID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.SecondLayerTopID, "Layering Piece", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SecondLayerTopID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.SecondLayerTopID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.OuterwearID, "OuterwearID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.OuterwearID, "Outerwear", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("OuterwearID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.OuterwearID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.BottomID, "BottomID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.BottomID, "Bottom", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("BottomID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.BottomID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ShoesID, "ShoesID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.ShoesID, "Shoes", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ShoesID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ShoesID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.AccessoryID, "AccessoryID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.AccessoryID, "Accessory #1", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("AccessoryID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.AccessoryID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Accessory2ID, "Accessory2ID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.Accessory2ID, "Accessory #2", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("Accessory2ID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Accessory2ID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Accessory3ID, "Accessory3ID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.Accessory3ID, "Accessory #3", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("Accessory3ID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Accessory3ID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Accessory4ID, "Accessory4ID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.Accessory4ID, "Accessory #4", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("Accessory4ID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Accessory4ID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Accessory5ID, "Accessory5ID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
+            @Html.LabelFor(model => model.Accessory5ID, "Accessory #5", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("Accessory5ID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Accessory5ID, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="font-family: 'Saira Condensed', sans-serif;">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
