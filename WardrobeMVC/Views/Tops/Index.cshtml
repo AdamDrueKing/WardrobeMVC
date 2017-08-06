@@ -25,17 +25,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img class="carouselIMG" src="~/Content/Images/Tops/blackshirt.jpg" alt="Los Angeles">
-            <a href="@Url.Action("Create","Tops")" class="btn btn-primary btn-lg carouselBTN">Add Top &raquo;</a>
+            <img class="carouselIMG" src="~/Content/MyPhoto/TShirt.jpg" / >
+            <a href="@Url.Action("Create","Tops")" class="btn btn-primary btn-lg carouselBTN">Add Top</a>
         </div>
         @foreach (var item in Model)
         {
             <div class="item">
                 <img class="carouselIMG" src="@Html.DisplayFor(modelItem => item.TopPhoto)" alt="">
                 <a href="@Url.Action("Create","Tops")" class="btn btn-primary btn-lg carouselBTN">Add Top &raquo;</a>
-                <span><a href="@Url.Action("Edit", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">Edit &raquo;</a></span>
-                <span><a href="@Url.Action("Details", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">View &raquo;</a></span>
-                <span><a href="@Url.Action("Delete", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">Delete &raquo;</a></span>
+                <span><a href="@Url.Action("Edit", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">Edit</a></span>
+                <span><a href="@Url.Action("Details", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">View</a></span>
+                <span><a href="@Url.Action("Delete", "Tops", new { id=item.TopID })" class="btn btn-primary btn-lg inCarouselBTN">Delete</a></span>
             </div>
         }
     </div>
@@ -56,13 +56,13 @@
 
 
 
-@*<h2 style="font-family: 'Coda Caption', sans-serif;">Index</h2>
+<h2 style="font-family: 'Coda Caption', sans-serif;">Index</h2>
 
 <p style="font-family: 'Saira Condensed', sans-serif;font-size:20px;">
     @Html.ActionLink("Create New", "Create")
-</p>*@
+</p>
 
-        @*<table class="table">
+        <table class="table">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.TopName)
@@ -116,4 +116,4 @@
 
         </table>
 
-</div>*@
+</div>
