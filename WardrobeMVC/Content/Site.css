@@ -59,3 +59,13 @@ h6 {
 .dropdown-menu {
     color:white;
 }
+
+.navbar navbar-default {
+    background-image: url('../../Content/Images/wood3.jpg');
+    color:white;
+}
+
+.footer {
+    background-image: url('../../Content/Images/wood3.jpg'); 
+    color:white;
+}
