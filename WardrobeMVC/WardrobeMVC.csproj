@@ -386,7 +386,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\MyPhoto\AshBeanie.jpg" />
+    <Content Include="Content\MyPhoto\AshScarf.jpg" />
     <Content Include="Content\MyPhoto\BDBlazer2.jpg" />
+    <Content Include="Content\MyPhoto\BlackShoes.jpg" />
     <Content Include="Content\MyPhoto\BlackShort.jpg" />
     <Content Include="Content\MyPhoto\Blazer.jpg" />
     <Content Include="Content\MyPhoto\Boardshort1.jpg" />
@@ -401,6 +404,7 @@
     <Content Include="Content\MyPhoto\Denim2.jpg" />
     <Content Include="Content\MyPhoto\Denim3.jpg" />
     <Content Include="Content\MyPhoto\DenimJacket.jpg" />
+    <Content Include="Content\MyPhoto\Gloves.jpg" />
     <Content Include="Content\MyPhoto\GreenShort.jpg" />
     <Content Include="Content\MyPhoto\GreyButtonDown.jpg" />
     <Content Include="Content\MyPhoto\hanger-line_318-42286.jpg" />
@@ -417,7 +421,10 @@
     <Content Include="Content\MyPhoto\LSPolo.jpg" />
     <Content Include="Content\MyPhoto\MandarinCollarSS.jpg" />
     <Content Include="Content\MyPhoto\MandarinCollarSSBlack.jpg" />
+    <Content Include="Content\MyPhoto\MidnightBeanie.jpg" />
+    <Content Include="Content\MyPhoto\MidnightCap.jpg" />
     <Content Include="Content\MyPhoto\Parka.jpg" />
+    <Content Include="Content\MyPhoto\RustCap.jpg" />
     <Content Include="Content\MyPhoto\Shorts.jpg" />
     <Content Include="Content\MyPhoto\SSButtondown.jpg" />
     <Content Include="Content\MyPhoto\SSButtondown2.jpg" />
@@ -439,6 +446,8 @@
     <Content Include="Content\MyPhoto\tshirt4.jpg" />
     <Content Include="Content\MyPhoto\Tshirt5.jpg" />
     <Content Include="Content\MyPhoto\VarsityJacket.jpg" />
+    <Content Include="Content\MyPhoto\WhiteShoes.jpg" />
+    <Content Include="Content\MyPhoto\WhiteSneakers.jpg" />
     <Content Include="Content\MyPhoto\wood.jpeg" />
     <Content Include="Content\MyPhoto\wood2.jpeg" />
     <Content Include="Content\MyPhoto\wood3.jpg" />
